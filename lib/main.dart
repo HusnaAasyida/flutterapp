@@ -6,32 +6,49 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Lab 3',
+      title: 'Grid View',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Flutter Lab 3'),
+          title: Text('Grid View'),
         ),
-        body: ListView(
-          padding: const EdgeInsets.all(8),
-          children: <Widget>[
+        body: Row(
+          children: [
             Container(
-              height: 50,
-              color: Colors.amber[600],
-              child: const Center(child: Text('Entry A')),
+              child: Container(
+                margin: const EdgeInsets.all(10.0),
+                color: Colors.amber[600],
+                width: 48.0,
+                height: 48.0,
+              ),
             ),
             Container(
-              height: 50,
-              color: Colors.amber[400],
-              child: const Center(child: Text('Entry B')),
+              child: Container(
+                margin: const EdgeInsets.all(10.0),
+                color: Colors.red[600],
+                width: 48.0,
+                height: 48.0,
+              ),
             ),
             Container(
-              height: 50,
-              color: Colors.amber[100],
-              child: const Center(child: Text('Entry C')),
+              child: Container(
+                margin: const EdgeInsets.all(10.0),
+                color: Colors.purple[600],
+                width: 48.0,
+                height: 48.0,
+              ),
             ),
+              Container(
+              child: Container(
+                margin: const EdgeInsets.all(10.0),
+                color: Colors.blue[600],
+                width: 48.0,
+                height: 48.0,
+                ),
+              ),
           ],
         )
-      ),
-    );
+        )
+
+        );
   }
 }

@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
             ),
             Container(
               height: 50,
-              color: Colors.amber[500],
+              color: Colors.amber[400],
               child: const Center(child: Text('Entry B')),
             ),
             Container(
